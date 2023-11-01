@@ -4,17 +4,18 @@
     margin: auto;
     position: relative;
     padding-top: 129px;
-    
+
 }
 
 header {
     display: flex;
-    display: flex;
+    width: 1440px;
     padding: 32px 80px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    gap: 333px;
-    background: #372D23;position: fixed;
+    /* gap: 250px; */
+    background-color: #372D23;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     top: 0;
@@ -26,19 +27,238 @@ header {
 .header_logo {
     width: 72px;
     height: 72px;
-    flex-shrink: 0;
+    margin: 32px 0 32px 0;
 }
 
 .active {
-    color: red;
+    color: #ED6C30;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 133.333% */
 }
 
 .no_active {
     color: #B89278;
+    color: #B89278;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 133.333% */
 }
 
-.header_icon {
+.header_home {
+    margin: 32px 48px 0 333px;
+}
+
+.header_menu {
+    margin: 32px 48px;
+
+}
+
+.header_reservagtion {
+    margin: 32px 48px;
+}
+
+.header_contact {
+    margin: 32px 48px;
+}
+
+.fa-solid {
     width: 40px;
     height: 40px;
+    /* flex-shrink: 0; */
+    color: #FCC21B;
+    margin: 32px 0 0 100px;
+}
+
+.fa-shop {
+    display: flex;
+}
+
+.section1 {
+    position: relative;
+    height: 640px;
+
+}
+
+.section_photo1 {
+    height: 640px;
     flex-shrink: 0;
+    position: relative;
+}
+
+.section_div {
+    width: calc(640 / 1440 * 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.title_p {
+    color: #FFF;
+    text-shadow: 0px 6px 4px #372D23;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    /* 116.667% */
+}
+
+button {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    display: flex;
+    height: 52px;
+    padding: 12px 38px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #FCC21B;
+    box-shadow: 0px 4px 4px 0px #372D23;
+    background-color: transparent;
+}
+
+.section2 {
+    display: flex;
+    column-gap: 40px;
+    margin: 80px 0;
+    justify-content: center;
+
+}
+
+.minidiv {
+    width: 400px;
+    height: 320px;
+    position: relative;
+}
+
+.mini_photo1 {
+    margin: 0 0 0 100px;
+    width: 100%;
+    height: 320px;
+}
+
+.mini_div1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height: 88px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(55, 45, 35, 0.80);
+    backdrop-filter: blur(2px);
+    margin: 0 0 0 100px;
+}
+
+.section2_icon {
+    margin: 20px;
+    font-size: 32px;
+    color: #ED6C30;
+}
+
+.card_img1_txt {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #372D23;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 120% */
+}
+
+.article_p {
+    color: #855C52;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+    width: calc(1160 / 1440 * 100%);
+    margin: 40px;
+}
+
+.article_button {
+    display: flex;
+    height: 52px;
+    padding: 12px 40px;
+    justify-content: center;
+    align-items: center;
+    background: #ED6C30;
+    border: #ED6C30;
+}
+
+footer {
+    width: 1440px;
+    height: 196px;
+    display: inline-flex;
+    padding: 32px 300px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 416px;
+    background: #372D23;
+}
+
+.food{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+}
+
+.footertitle {
+    display: flex;
+    color: #B89278;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+.connect{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+.footer_icon{
+display: flex;
+}
+.fa-brands{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #FCC21B;
 }
